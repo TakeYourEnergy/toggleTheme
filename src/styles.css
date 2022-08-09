@@ -1,0 +1,49 @@
+html[data-theme="light"] {
+  --background-color: white;
+  --color-text: black;
+  --color-button-text: white;
+  --background-button-color: black;
+}
+
+html[data-theme="dark"] {
+  --background-color: black;
+  --color-text: white;
+  --color-button-text: black;
+  --background-button-color: white;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--color-text);
+  transition: background-color 200ms linear;
+  transition: color 200ms linear;
+}
+
+.title {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.btn {
+  margin-top: 40px;
+  background-color: var(--background-button-color);
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 500ms linear;
+}
+
+.text {
+  padding: 20px;
+  text-align: center;
+  color: var(--color-button-text);
+  font-size: 20px;
+  margin: 0;
+  transition: color 500ms linear;
+}
